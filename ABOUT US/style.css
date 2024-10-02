@@ -1,0 +1,918 @@
+/* right side nav */
+.fixed-menu li {
+  margin: 10px 0;
+}
+
+.li-1{
+  position: fixed; /* Fix it to the screen */
+  top: 30%; /* Adjust as necessary */
+  right: 0; /* Align it to the right */
+  z-index: 1000; /* Ensure it's above other content like carousel */
+  background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+  padding: 12px 50px 12px 20px;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+  font-size: 10px;
+}
+
+
+.li-2{
+  position: fixed; /* Fix it to the screen */
+  top: 35.8%; /* Adjust as necessary */
+  right: 0; /* Align it to the right */
+  z-index: 1000; /* Ensure it's above other content like carousel */
+  background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+  padding: 12px 58px 12px 20px;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+  font-size: 10px;
+}
+
+.li-3{
+  position: fixed; /* Fix it to the screen */
+  top: 41.5%; /* Adjust as necessary */
+  right: 0; /* Align it to the right */
+  z-index: 1000; /* Ensure it's above other content like carousel */
+  background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+  padding: 12px 101px 12px 20px;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+  font-size: 10px;
+}
+
+.li-4{
+  position: fixed; /* Fix it to the screen */
+  top: 47.2%; /* Adjust as necessary */
+  right: 0; /* Align it to the right */
+  z-index: 1000; /* Ensure it's above other content like carousel */
+  background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+  padding: 12px 64px 12px 20px;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+  font-size: 10px;
+}
+.li-5{
+  position: fixed; /* Fix it to the screen */
+  top: 52.9%; /* Adjust as necessary */
+  right: 0; /* Align it to the right */
+  z-index: 1000; /* Ensure it's above other content like carousel */
+  background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+  padding: 12px 30px 12px 20px;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+  font-size: 10px;
+}
+.li-6{
+  position: fixed; /* Fix it to the screen */
+  top: 58.7%; /* Adjust as necessary */
+  right: 0; /* Align it to the right */
+  z-index: 1000; /* Ensure it's above other content like carousel */
+  background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+  padding: 12px 91px 12px 20px;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+  font-size: 10px;
+}
+.li-7{
+  position: fixed; /* Fix it to the screen */
+  top: 64.3%; /* Adjust as necessary */
+  right: 0; /* Align it to the right */
+  z-index: 1000; /* Ensure it's above other content like carousel */
+  background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+  padding: 12px 100px 12px 20px;
+  list-style: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+  font-size: 10px;
+}
+
+
+
+
+
+
+.fixed-menu a {
+  display: block;
+  /* padding: 10px 20px; */
+   /*background-color: #e9ecef; */ /* Light gray background for links */
+  color: #000000;
+  /* border-radius: 5px; */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.fixed-menu a:hover {
+  background-color: #e30613; /* Zenith's red color for hover */
+  /* color: white; */
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* first nav bar */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    padding: 0 20px;
+    background-color: #b3b3b3;
+    color: rgb(92, 92, 92);
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left a, .navbar-right a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.navbar-left a:hover, .navbar-right a:hover {
+    color: #ddd;
+}
+
+.country-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c9c9c9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #494949;
+}
+
+.country-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+       /* second nav bar  */
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    background-color: #ffffff;
+    color: white;
+}
+
+.nav-left .dropdown {
+  gap: -100 !important;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .dropdown,
+.nav-left button {
+    margin-right: 1rem;
+}
+
+.nav-left .button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content a:hover {
+    background-color: #ddd;
+    padding: 10px 10px ;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right .search-bar {
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.nav-right .logo {
+    width: 100px;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+ 
+.fa .fa-bars {
+    font-size: 24px;
+    display: none;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .nav-left,
+    .nav-right .search-bar {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+    
+
+    .nav-right .logo {
+        margin-right: auto;
+    }
+}
+
+
+/* section one */
+
+
+
+/* section 2 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f8f8f8;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .about-content h1, .about-content h2, .about-content h3 {
+    margin: 0 0 20px;
+    color: #333;
+  }
+  
+  .about-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+  }
+  
+  /* Mobile Design (less than 768px) */
+  @media (max-width: 767px) {
+    .about-section {
+      flex-direction: column-reverse; /* Stack content, with text below image */
+    }
+  
+    .about-content {
+      padding-right: 0;
+      margin-top: 20px; /* Add space above the text */
+    }
+  
+    .about-image img {
+      width: 100%; /* Ensure the image takes full width on mobile */
+    }
+  }
+
+  
+/* section 3 */
+
+  /* Centered Section Styles */
+.centered-section {
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .centered-header h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .centered-header p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .pillars-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .pillars-left, .pillars-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pillars-left {
+    flex: 1;
+    margin-right: 30px;
+  }
+  
+  .pillars-right {
+    flex: 1;
+  }
+  
+  .pillar-text {
+    margin-bottom: 20px;
+  }
+  
+  .pillar-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .pillar-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pillars-container {
+      flex-direction: column;
+    }
+  
+    .pillars-left, .pillars-right {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  /* section  4 */
+
+  /* Chevron List Section Styles */
+.chevron-list-section {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .chevron-list-content {
+    flex: 1;
+    padding-right: 30px;
+    margin-left: 80px;
+  }
+  
+  .chevron-list-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .chevron-list-content p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  .chevron-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .chevron-list li {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px; /* Space for the chevron */
+  }
+  
+  .chevron-list li::before {
+    content: '›'; /* Chevron right arrow */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #666; /* Chevron color */
+    font-size: 20px;
+  }
+  
+  /* Right side image */
+  .chevron-list-image {
+    flex: 1;
+    text-align: right; /* Align image to the right */
+  }
+  
+  .chevron-list-image img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991px) {
+    .chevron-list-section {
+      flex-direction: column-reverse;
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .chevron-list-content {
+      padding-right: 0;
+      margin-bottom: 30px; /* Space below the content */
+    }
+  
+    .chevron-list-image {
+      text-align: center; /* Center the image on smaller screens */
+      width: 100%;
+    }
+    .chevron-list{
+      text-align: center;
+      padding: 30px;
+    }
+  }
+  
+
+  /* section 5 */
+
+  /* Centered Header Section Styles */
+.centered-header-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
+    padding: 50px;
+    background-color: #f9f9f9; /* Background color for the section */
+    text-align: center; /* Center text alignment */
+  }
+  
+  .centered-header-section h2 {
+    font-size: 32px;
+    color: #000000; /* Main header color */
+    margin-bottom: 10px; /* Space between headers */
+  }
+  
+  .centered-header-section h3 {
+    font-size: 32px;
+    color: #000000; /* Subheader color */
+    margin-bottom: 20px; /* Space between subheader and text */
+  }
+  
+  .centered-header-section p {
+    font-size: 18px;
+    color: #444; /* Text color */
+    max-width: 600px; /* Optional: limit the width of the text */
+    line-height: 1.6; /* Line height for readability */
+  }
+  
+
+  /* section 6 */
+
+  /* Image and Text Section Styles */
+.image-text-section {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    padding: 50px;
+    background-color: #ececec; /* Background color for the section */
+  }
+  
+  .image-container {
+    flex: 1; /* Takes up space on the left */
+    padding-right: 30px; /* Space between image and text */
+  }
+  
+  .image-text-section img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    /* border-radius: 8px; Optional: rounded corners for the image */
+  }
+  
+  .text-container {
+    flex: 1; /* Takes up space on the right */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .text-container h2 {
+    font-size: 32px;
+    color: #333; /* Header color */
+    margin-bottom: 10px; /* Space below the header */
+  }
+  
+  .text-container p {
+    font-size: 18px;
+    color: #666; /* Text color */
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  .button-link {
+    display: inline-block; /* Make it look like a button */
+    padding: 10px 20px; /* Button padding */
+    background-color: #ff0000; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s; /* Smooth background color change */
+  }
+  
+  .button-link:hover {
+    background-color: #9c1d13; /* Darker shade on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 991px) {
+    .image-text-section {
+      flex-direction: column; /* Stack items vertically on mobile */
+      align-items: center; /* Center align items */
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .image-container {
+      padding-right: 0; /* Reset padding on mobile */
+      margin-bottom: 20px; /* Space below the image */
+    }
+  
+    .text-container {
+      flex: none; /* Allow text container to resize */
+    }
+  }
+  
+
+  /* section7 */
+
+
+  /* Centered Headers Section Styles */
+.centered-headers-section {
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    padding: 50px;
+    background-color: #f9f9f9; /* Background color for the section */
+    text-align: center; /* Center text alignment */
+  }
+  
+  .header-text-container {
+    max-width: 800px; /* Optional: limit the width of the content */
+  }
+  
+  .header-text-container h2 {
+    font-size: 28px; /* Header font size */
+    color: #333; /* Header color */
+    margin-bottom: 10px; /* Space below the header */
+  }
+  
+  .header-text-container p {
+    font-size: 18px; /* Text font size */
+    color: #666; /* Text color */
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+
+  /* section 8 */
+
+
+  .text-image-section {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    padding: 50px; /* Padding for the section */
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  .content {
+    flex: 1; /* Take up available space on the left */
+    padding-right: 30px; /* Space between text and image */
+  }
+  
+  .image-container {
+    flex: 1; /* Take up available space on the right */
+    text-align: right; /* Align image to the right */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .text-image-section {
+      flex-direction: column-reverse; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .content {
+      padding-right: 0; /* Reset padding */
+      margin-bottom: 20px; /* Space below text */
+    }
+  
+    .image-container {
+      text-align: center; /* Center image on smaller screens */
+    }
+  }
+  
+
+  /* section 9 */
+
+  .center-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Fixed height for all screens */
+    background-color: red !important;
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    text-align: center;
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+}
+
+.center-section h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for contrast */
+}
+
+.center-section p {
+    color: #ffffff;
+    line-height: 1.5; /* Increase line height for readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for contrast */
+}
+
+
+
+/* Media Queries for Responsive Design */
+
+/* Adjust for smaller screens (tablets and below) */
+@media (max-width: 768px) {
+    .center-section h2 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+    .center-section p {
+        font-size: 15px; /* Smaller paragraph text */
+    }
+}
+
+/* Adjust for very small screens (mobile phones) */
+@media (max-width: 480px) {
+    .center-section h2 {
+        font-size: 1.2rem; /* Further reduce font size */
+    }
+}
+
+
+
+/* section 10 */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.custom-section {
+  display: flex; /* Use flexbox for layout */
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 50px 0; /* Padding for the section */
+  flex-wrap: wrap; /* Allow columns to wrap */
+}
+
+.column {
+  flex: 1; /* Equal width columns */
+  text-align: center; /* Center content in columns */
+  padding: 20px; /* Padding for individual columns */
+  min-width: 200px; /* Minimum width for responsiveness */
+}
+
+.header-only {
+  font-weight: bold; /* Bold text for the header */
+  font-size: 1.5em; /* Larger font size for the header */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  margin: 5px 0; /* Space between list items */
+  display: flex;
+  align-items: center;
+}
+
+li::before {
+  content: '›'; /* Chevron right arrow (») */
+  margin-right: 8px;
+  font-size: 1.2em; /* Adjust size if needed */
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .custom-section {
+      flex-direction: column; /* Stack columns vertically */
+      padding: 20px; /* Reduce padding for small screens */
+  }
+
+  .column {
+      flex: none; /* Reset flex properties */
+      width: 100%; /* Full width for each column */
+      text-align: left; /* Align text to the left on smaller screens */
+  }
+
+  .header-only {
+      font-size: 2em; /* Increase header font size on small screens */
+      text-align: center; /* Keep header centered */
+      padding-bottom: 20px; /* Add space below the header */
+  }
+
+  ul {
+      padding-left: 0; /* Remove padding from UL */
+  }
+
+  li {
+      margin: 10px 0; /* More space between list items */
+  }
+}
+
+
+   
+                    /* footer */
+                    footer {
+                      background-color: #f1f1f1; /* Footer background similar to Zenith Bank */
+                      padding: 30px 0; /* Space around the footer */
+                      border-top: 5px solid #dcdcdc; /* Prefooter line */
+                      font-family: Arial, Helvetica, sans-serif;
+                  }
+                  
+                  .footer-container {
+                      display: flex;
+                      justify-content: space-between;
+                      max-width: 1200px;
+                      margin: 0 auto;
+                      padding: 0 20px;
+                      height: -1000px !important; 
+
+                  }
+                  
+                  .footer-column {
+                      flex: 1; /* Make each column take equal space */
+                      margin: 0 10px; /* Space between columns */
+                  }
+                  
+                  .footer-column h3 {
+                      font-size: 12px;
+                      color: #333;
+                      font-weight: bold;
+                      margin-bottom: 10px;
+                      text-transform: uppercase;
+                  }
+                  
+                  .footer-column ul {
+                      list-style: none;
+                      padding: 0;
+                  }
+                  
+                  .footer-column ul li {
+                      margin-bottom: 8px;
+                  }
+                  
+                  .footer-column ul li a {
+                      font-size: 10px;
+                      color: #000;
+                      text-decoration: none;
+                      transition: color 0.3s ease;
+                  }
+                  
+                  .footer-column ul li a:hover {
+                      color: #ff0000; /* Zenith Bank red on hover */
+                  }
+                  
+                  /* Responsive Design */
+                  @media (max-width: 768px) {
+                    .footer-container {
+                      flex-direction: column; /* Stack items vertically on smaller screens */
+                      align-items: center;
+                      text-align:end ;
+                  }
+                      .footer-column {
+                        flex-direction: column-reverse; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+                          width: 100%; /* Stack columns vertically on smaller screens */
+                          text-align: center;
+                          margin: 10px 0; /* Space between stacked columns */
+                      }
+                  }

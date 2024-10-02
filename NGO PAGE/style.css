@@ -1,0 +1,832 @@
+/* right nav */
+
+.fixed-menu li {
+    margin: 10px 0;
+  }
+  
+  .li-1{
+    position: fixed; /* Fix it to the screen */
+    top: 30.3%; /* Adjust as necessary */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it's above other content like carousel */
+    background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+    padding: 12px 50px 12px 20px;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+    font-size: 10px;
+  }
+  .li-2{
+    position: fixed; /* Fix it to the screen */
+    top: 35.9%; /* Adjust as necessary */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it's above other content like carousel */
+    background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+    padding: 12px 58px 12px 20px;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+    font-size: 10px;
+  }
+  .li-3{
+    position: fixed; /* Fix it to the screen */
+    top: 41.6%; /* Adjust as necessary */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it's above other content like carousel */
+    background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+    padding: 12px 101px 12px 20px;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+    font-size: 10px;
+  }
+  .li-4{
+    position: fixed; /* Fix it to the screen */
+    top: 47.3%; /* Adjust as necessary */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it's above other content like carousel */
+    background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+    padding: 12px 64px 12px 20px;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+    font-size: 10px;
+  }
+  .li-5{
+    position: fixed; /* Fix it to the screen */
+    top: 53%; /* Adjust as necessary */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it's above other content like carousel */
+    background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+    padding: 12px 30px 12px 20px;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+    font-size: 10px;
+  }
+  .li-6{
+    position: fixed; /* Fix it to the screen */
+    top: 58.8%; /* Adjust as necessary */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it's above other content like carousel */
+    background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+    padding: 12px 91px 12px 20px;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+    font-size: 10px;
+  }
+  .li-7{
+    position: fixed; /* Fix it to the screen */
+    top: 64.4%; /* Adjust as necessary */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it's above other content like carousel */
+    background-color: rgba(255, 255, 255, 0.932); /* Set the background to white */
+    padding: 12px 100px 12px 20px;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better separation */
+    font-size: 10px;
+  }
+  
+
+  
+.fixed-menu a {
+    display: block;
+    /* padding: 10px 20px; */
+     /*background-color: #e9ecef; */ /* Light gray background for links */
+    color: #000000;
+    /* border-radius: 5px; */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .fixed-menu a:hover {
+    background-color: #e30613; /* Zenith's red color for hover */
+    /* color: white; */
+  }
+  
+  
+  @media only screen and (max-width: 1024px) {
+    .fixed-menu {
+      display: none;
+    }
+  }
+   
+
+      /* first nav bar */
+
+
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Navbar Styling */
+    .navbar-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20px;
+        padding: 0 20px;
+        background-color: #b3b3b3;
+        color: rgb(92, 92, 92);
+    }
+    
+    .navbar-left, .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar-left a, .navbar-right a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    
+    .navbar-left a:hover, .navbar-right a:hover {
+        color: #ddd;
+    }
+    
+    .country-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #c9c9c9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #494949;
+    }
+    
+    .country-dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+
+    @media (max-width: 1024px) {
+      .navbar-left, .navbar-right {
+        display: none;
+    }
+    }
+    
+    
+           /* second nav bar  */
+    
+    
+    
+    
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Navbar Styling */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        height: 80px;
+        width: 90%;
+        background-color: #ffffff;
+        color: white;
+    }
+    
+    .nav-left,
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-left .dropdown,
+    .nav-left button {
+        margin-right: 1rem;
+    }
+    
+    .nav-left .button {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+    
+    .dropdown {
+        position: relative;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: rgb(0, 0, 0);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropdown-content a:hover {
+        background-color: #ddd;
+        padding: 10px 10px ;
+    }
+    
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-right .search-bar {
+        padding: 0.5rem;
+        margin-right: 1rem;
+    }
+    
+    .nav-right .logo {
+        width: 100px;
+    }
+    
+    
+     
+    .fa .fa-bars {
+        font-size: 24px;
+        display: none;
+    }
+    
+    
+    /* Responsive Styling */
+    @media (max-width: 1024px) {
+        .nav-left,
+        .nav-right .search-bar {
+            display: none;
+        }
+    
+        .fa-bars {
+            display: none;
+        }
+        
+       
+    }
+    
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.centered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .centered-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .centered-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .centered-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .centered-section p {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .centered-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .centered-section p {
+      font-size: 0.9rem;
+      max-width: 100%;
+    }
+  }
+  
+
+  /* section 3 */
+  
+  .text-image-section {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    padding: 50px; /* Padding for the section */
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  .content {
+    flex: 1; /* Take up available space on the left */
+    padding-right: 30px; /* Space between text and image */
+  }
+  
+  .image-container {
+    flex: 1; /* Take up available space on the right */
+    text-align: left; /* Align image to the right */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .text-image-section {
+      flex-direction: column-reverse; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .content {
+      padding-right: 0; /* Reset padding */
+      margin-bottom: 20px; /* Space below text */
+    }
+  
+    .image-container {
+      text-align: center; /* Center image on smaller screens */
+    }
+  }
+  
+
+
+
+  /* section 3 */
+
+  /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Image-Text Section */
+  .image-text-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background like on zenithbank.com */
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Slight rounded corners */
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 40px;
+  }
+  
+  .text-content h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000; /* Zenith Bank’s signature red color */
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .image-text-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .text-content {
+      max-width: 100%;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  
+    .image-container {
+      max-width: 100%;
+    }
+  }
+  
+  
+  /* section 4 */
+
+  .text-image-section {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    padding: 50px; /* Padding for the section */
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  .content {
+    flex: 1; /* Take up available space on the left */
+    padding-right: 30px; /* Space between text and image */
+  }
+  
+  .image-container {
+    flex: 1; /* Take up available space on the right */
+    text-align: left; /* Align image to the right */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    /* border-radius: 8px; Optional: rounded corners for the image */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .text-image-section {
+      flex-direction: column-reverse; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .content {
+      padding-right: 0; /* Reset padding */
+      margin-bottom: 20px; /* Space below text */
+    }
+  
+    .image-container {
+      text-align: center; /* Center image on smaller screens */
+    }
+  }
+
+
+  /* section 5 */
+
+
+  /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Image-Text Section */
+  .image-text-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background */
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 40px;
+  }
+  
+  .text-content h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .text-content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .image-text-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .text-content {
+      max-width: 100%;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  
+    .image-container {
+      max-width: 100%;
+    }
+  }
+
+  /* section 7 */
+
+  
+  .text-image-section {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    padding: 50px; /* Padding for the section */
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  .content {
+    flex: 1; /* Take up available space on the left */
+    padding-right: 30px; /* Space between text and image */
+  }
+  
+  .image-container {
+    flex: 1; /* Take up available space on the right */
+    text-align: left; /* Align image to the right */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    /* border-radius: 8px; Optional: rounded corners for the image */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .text-image-section {
+      flex-direction: column-reverse; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .content {
+      padding-right: 0; /* Reset padding */
+      margin-bottom: 20px; /* Space below text */
+    }
+  
+    .image-container {
+      text-align: center; /* Center image on smaller screens */
+    }
+  }
+
+
+/* section 7 */
+
+ /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Media Content Section */
+  .media-content-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+    background-color: #f0f0f0; /* Light background */
+  }
+  
+  .media-image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .media-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .media-text {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 40px;
+  }
+  
+  .media-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .media-text p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .media-content-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .media-text {
+      max-width: 100%;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  
+    .media-image {
+      max-width: 100%;
+    }
+  }
+
+  /* section 8 */
+ 
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .custom-section {
+    display: flex; /* Use flexbox for layout */
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 50px 0; /* Padding for the section */
+    flex-wrap: wrap; /* Allow columns to wrap */
+  }
+  
+  .column {
+    flex: 1; /* Equal width columns */
+    text-align: center; /* Center content in columns */
+    padding: 20px; /* Padding for individual columns */
+    min-width: 200px; /* Minimum width for responsiveness */
+  }
+  
+  .header-only {
+    font-weight: bold; /* Bold text for the header */
+    font-size: 1.5em; /* Larger font size for the header */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  li {
+    margin: 5px 0; /* Space between list items */
+    display: flex;
+    align-items: center;
+  }
+  
+  li::before {
+    content: '›'; /* Chevron right arrow (») */
+    margin-right: 8px;
+    font-size: 1.2em; /* Adjust size if needed */
+  }
+  
+  /* Responsive adjustments for small screens */
+  @media (max-width: 768px) {
+    .custom-section {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 20px; /* Reduce padding for small screens */
+    }
+  
+    .column {
+        flex: none; /* Reset flex properties */
+        width: 100%; /* Full width for each column */
+        text-align: left; /* Align text to the left on smaller screens */
+    }
+  
+    .header-only {
+        font-size: 2em; /* Increase header font size on small screens */
+        text-align: center; /* Keep header centered */
+        padding-bottom: 20px; /* Add space below the header */
+    }
+  
+    ul {
+        padding-left: 0; /* Remove padding from UL */
+    }
+  
+    li {
+        margin: 10px 0; /* More space between list items */
+    }
+  }
+
+     
+                    /* footer */
+                    footer {
+                      background-color: #f1f1f1; /* Footer background similar to Zenith Bank */
+                      padding: 30px 0; /* Space around the footer */
+                      border-top: 5px solid #dcdcdc; /* Prefooter line */
+                      font-family: Arial, Helvetica, sans-serif;
+                  }
+                  
+                  .footer-container {
+                      display: flex;
+                      justify-content: space-between;
+                      max-width: 1200px;
+                      margin: 0 auto;
+                      padding: 0 20px;
+                      height: -1000px !important; 
+
+                  }
+                  
+                  .footer-column {
+                      flex: 1; /* Make each column take equal space */
+                      margin: 0 10px; /* Space between columns */
+                  }
+                  
+                  .footer-column h3 {
+                      font-size: 12px;
+                      color: #333;
+                      font-weight: bold;
+                      margin-bottom: 10px;
+                      text-transform: uppercase;
+                  }
+                  
+                  .footer-column ul {
+                      list-style: none;
+                      padding: 0;
+                  }
+                  
+                  .footer-column ul li {
+                      margin-bottom: 8px;
+                  }
+                  
+                  .footer-column ul li a {
+                      font-size: 10px;
+                      color: #000;
+                      text-decoration: none;
+                      transition: color 0.3s ease;
+                  }
+                  
+                  .footer-column ul li a:hover {
+                      color: #ff0000; /* Zenith Bank red on hover */
+                  }
+                  
+                  /* Responsive Design */
+                  @media (max-width: 768px) {
+                    .footer-container {
+                      flex-direction: column; /* Stack items vertically on smaller screens */
+                      align-items: center;
+                      text-align:end ;
+                  }
+                      .footer-column {
+                        flex-direction: column-reverse; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+                          width: 100%; /* Stack columns vertically on smaller screens */
+                          text-align: center;
+                          margin: 10px 0; /* Space between stacked columns */
+                      }
+                  }
